@@ -15,6 +15,7 @@ This project was developed as a personal engineering project and is intended for
 - Brushless motor + ESC thrust control
 - 3D-printed structural components
 - Modular design for future sensor-based stabilization (IMU)
+- Custom Android control app (Kodular) with joystick, slider, and buttons
 
 ---
 
@@ -29,6 +30,7 @@ This project was developed as a personal engineering project and is intended for
 - Arduino Nano
 - PWM control of servos and ESC
 - Bluetooth serial input for joystick commands
+- Custom Android control app (Kodular) with joystick, throttle slider, and buttons
 
 ---
 
@@ -68,6 +70,20 @@ This project was developed as a personal engineering project and is intended for
 | Structural Parts | PLA / PLA+ 3D prints | Frame & mounts |
 
 *Note: This BOM lists system-critical components rather than manufacturing consumables.*
+
+---
+
+## Control App (Kodular)
+
+A custom Android control app was developed using **Kodular** to provide real-time manual control during bench testing. The app includes a single on-screen joystick for yaw and pitch control, a slider for throttle input, and additional buttons for connection and testing.
+
+The app sends joystick X/Y values and throttle commands to the Arduino Nano over Bluetooth (HC-05), where the firmware maps inputs to servo angles and ESC throttle using PWM control.
+
+**Why Kodular:** It enabled rapid prototyping of the control interface, allowing quick iteration on input scaling and responsiveness without slowing down hardware development.
+
+Additional details: [`docs/kodular-app.md`](docs/kodular-app.md)
+
+*Note: The mobile app is a lightweight test interface used for ground testing and validation, not the primary focus of the project.*
 
 ---
 
