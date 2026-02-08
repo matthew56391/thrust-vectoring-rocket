@@ -73,5 +73,4 @@ Manufacturing files (Gerbers) generated for PCB fabrication.
 ## Notes
 - This hardware was designed for **bench testing only**
 - No free-flight operation was performed
-- A Bill of Materials (BOM) will be added in a future update
 
