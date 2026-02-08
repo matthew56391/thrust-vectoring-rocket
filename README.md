@@ -34,6 +34,14 @@ This project was developed as a personal engineering project and is intended for
 
 ---
 
+## System Overview (Images)
+*Images of the gimbal assembly, PCB, and test rig will be added here.*
+
+## Demonstration Videos
+*Short demonstration videos showing gimbal actuation and control response will be added here.*
+
+---
+
 ## Bill of Materials (BOM)
 
 ### Control & Communication
