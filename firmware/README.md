@@ -31,12 +31,12 @@ This firmware:
 
 ### Requirements
 - Arduino IDE (or PlatformIO)
-- Arduino Nano
+- Arduino Nano/UNO
 - HC-05 Bluetooth module
 
 ### Upload
 1. Open `rocket_control.ino` in Arduino IDE  
-2. Select **Board:** Arduino Nano  
+2. Select **Board:** Arduino Nano/UNO 
 3. Select correct **Port**  
 4. Upload
 
