@@ -73,4 +73,3 @@ Manufacturing files (Gerbers) generated for PCB fabrication.
 ## Notes
 - This hardware was designed for **bench testing only**
 - No free-flight operation was performed
-
