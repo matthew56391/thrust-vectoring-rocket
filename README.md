@@ -12,6 +12,7 @@ This project was developed as a personal engineering project and is intended for
 ---
 
 ## Key Features
+- Demonstration videos included showing live gimbal and thrust response
 - 2-axis thrust-vectoring gimbal (yaw + pitch)
 - Custom-designed PCB for control and power distribution
 - Arduino Nano–based firmware
