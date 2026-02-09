@@ -1,9 +1,13 @@
 # Thrust-Vectoring Rocket Test Rig
 
 ## Overview
-This project is a bench-tested thrust-vectoring rocket system designed to explore mechanical gimbal design, embedded control, and power electronics integration. The system uses a 2-axis gimbal driven by high-torque servos to redirect thrust from a brushless motor, controlled by an Arduino-based system with Bluetooth input.
+This project is a bench-tested thrust-vectoring rocket control system designed
+to explore mechanical gimbal design, embedded control, and power electronics
+integration. A 2-axis gimbal driven by high-torque servos redirects thrust from a
+brushless motor, controlled by an Arduino-based system with Bluetooth input.
 
-This project was developed as a personal engineering project and is intended for **ground testing only**.
+This project was developed as a personal engineering project and is intended for
+**ground testing only**.
 
 ---
 
@@ -21,92 +25,77 @@ This project was developed as a personal engineering project and is intended for
 
 ## System Architecture
 
-**Power**
+### Power
 - 3S LiPo battery
 - Buck converter stepping down to 5V for logic and servos
-- ESC powering brushless motor
+- ESC supplying power to the brushless motor
 
-**Control**
+### Control
 - Arduino Nano
 - PWM control of servos and ESC
 - Bluetooth serial input for joystick commands
-- Custom Android control app (Kodular) with joystick, throttle slider, and buttons
+- Android control app with joystick, throttle slider, and buttons
 
 ---
 
 ## System Overview (Images)
-*Images of the gimbal assembly, PCB, and test rig will be added here.*
+Project photos showing the gimbal assembly, internal electronics, and test setup
+are available in the [`/images`](images) directory.
+
+---
 
 ## Demonstration Videos
-*Short demonstration videos showing gimbal actuation and control response will be added here.*
+Demonstration and walkthrough videos are documented in the
+[`/videos`](videos) folder, including:
+- Real-time gimbal and thrust control demonstration
+- Integrated rocket system overview
+- Detailed gimbal and electronics walkthrough
+- Bench testing under load
 
 ---
 
 ## Bill of Materials (BOM)
+A complete, subsystem-organized Bill of Materials is available here:  
+📄 [`hardware/bill_of_materials.md`](hardware/bill_of_materials.md)
 
-### Control & Communication
-
-| Component | Part / Spec | Purpose |
-|---------|------------|--------|
-| Microcontroller | Arduino Nano | Central control |
-| Bluetooth Module | HC-05 | Wireless serial communication |
-| USB Interface | Mini-USB (Nano) | Programming & debug |
-
-### Actuation
-
-| Component | Part / Spec | Purpose |
-|---------|------------|--------|
-| Servo Motor (Yaw) | MG996R | Yaw-axis thrust vectoring |
-| Servo Motor (Pitch) | MG996R | Pitch-axis thrust vectoring |
-| Brushless Motor | RS2205 2300KV | Thrust generation |
-| ESC | 30A Brushless ESC | Motor speed control |
-
-### Power
-
-| Component | Part / Spec | Purpose |
-|---------|------------|--------|
-| Battery | 3S 11.1V LiPo | Primary power source |
-| Buck Converter | XL4015 | Step-down to 5V |
-| Capacitors | Electrolytic + ceramic | Power filtering & noise suppression |
-
-### Mechanical
-
-| Component | Part / Spec | Purpose |
-|---------|------------|--------|
-| Ball Bearing | 608ZZ | Gimbal support |
-| Fasteners | M3 screws & nuts | Structural mounting |
-| Structural Parts | PLA / PLA+ 3D prints | Frame & mounts |
-
-*Note: This BOM lists system-critical components rather than manufacturing consumables.*
+*The BOM focuses on system-critical components rather than manufacturing
+consumables.*
 
 ---
 
 ## Control App (Kodular)
+A custom Android control app was developed using **Kodular** to support real-time
+manual control during bench testing. The app provides:
+- A single joystick for yaw and pitch control
+- A throttle slider for motor speed
+- Buttons for connection and testing actions
 
-A custom Android control app was developed using **Kodular** to provide real-time manual control during bench testing. The app includes a single on-screen joystick for yaw and pitch control, a slider for throttle input, and additional buttons for connection and testing.
+Joystick X/Y values and throttle commands are transmitted over Bluetooth (HC-05)
+to the Arduino Nano, where firmware maps inputs to servo angles and ESC throttle
+via PWM.
 
-The app sends joystick X/Y values and throttle commands to the Arduino Nano over Bluetooth (HC-05), where the firmware maps inputs to servo angles and ESC throttle using PWM control.
+Kodular was selected to enable rapid prototyping of the control interface while
+keeping control logic centralized in firmware.
 
-**Why Kodular:** It enabled rapid prototyping of the control interface, allowing quick iteration on input scaling and responsiveness without slowing down hardware development.
-
-Additional details: [`docs/kodular-app.md`](docs/kodular-app.md)
-
-*Note: The mobile app is a lightweight test interface used for ground testing and validation, not the primary focus of the project.*
+Additional documentation:  
+📄 [`docs/kodular_app.md`](docs/kodular_app.md)
 
 ---
 
-## Repository Contents
-- `/firmware` – Arduino control code  
-- `/hardware` – PCB schematic and gerber files  
-- `/stl` – 3D printable parts  
-- `/images` – Project photos  
-- `/docs` – Wiring diagrams and assembly notes  
+## Repository Structure
+- `/firmware` – Arduino control firmware
+- `/hardware` – PCB schematic, Gerbers, and wiring documentation
+- `/stl` – 3D-printable mechanical components
+- `/images` – Project and test photos
+- `/videos` – Linked demonstration and walkthrough videos
+- `/docs` – Supporting documentation
 
 ---
 
 ## Safety Notice
 ⚠️ **This project is for bench testing only.**  
-No free-flight testing was performed. Always remove propellers during setup and follow LiPo battery safety procedures.
+No free-flight testing was performed. Always remove propellers during software
+setup and follow proper LiPo battery safety procedures.
 
 ---
 
