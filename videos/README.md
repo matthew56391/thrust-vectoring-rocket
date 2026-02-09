@@ -34,4 +34,4 @@ mechanical construction, electronics, circuit design, and Bluetooth control logi
 Demonstration of thrust-vectoring behavior during integrated rocket testing
 under load.
 
-🎥 https://drive.google.com/file/d/TESTING_LINK/view
+[https://drive.google.com/file/d/TESTING_LINK/view](https://drive.google.com/file/d/1JfX_UAzv5ngLTnVHjHai4JdM_40cSMha/view?usp=sharing)
