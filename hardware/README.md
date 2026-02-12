@@ -23,8 +23,6 @@ Power is supplied externally via a regulated 5V source.
 
 ## Files in This Folder
 
-## Files in This Folder
-
 ### PCB Schematic  
 [View schematic](pcb/schematic/pcb_schematic.pdf)
 
