@@ -23,7 +23,11 @@ Power is supplied externally via a regulated 5V source.
 
 ## Files in This Folder
 
-### `pcb/schematic/pcb_schematic.pdf`
+## Files in This Folder
+
+### PCB Schematic  
+[View schematic](pcb/schematic/pcb_schematic.pdf)
+
 Electrical schematic of the PCB showing:
 - Signal routing
 - Voltage divider for HC-05 RX (1kΩ / 2kΩ)
@@ -35,7 +39,9 @@ This schematic represents the circuit implemented on the PCB.
 
 ---
 
-### `wiring/system_wiring_diagram.png`
+### System Wiring Diagram  
+[View wiring diagram](wiring/system_wiring_diagram.png)
+
 System-level wiring diagram showing how all components are connected in the full test setup, including:
 - LiPo battery
 - Buck converter
@@ -48,25 +54,35 @@ This diagram is intended for real-world assembly and troubleshooting.
 
 ---
 
-### `pcb/images/pcb_2d/`
-2D PCB layout view showing:
-- Component placement
-- Copper routing
-- Power trace widths
-- Connector orientation
+### PCB 2D Layout Images  
+[View 2D layout images](pcb/images/pcb_2d/)
+
+Directory containing 2D PCB layout views showing:
+- Component placement  
+- Copper routing  
+- Power trace widths  
+- Connector orientation  
+
+Includes top and bottom views of the fabricated board layout.
 
 ---
 
-### `pcb/images/pcb_3d/`
-3D render of the PCB used to visualize:
-- Board form factor
-- Header placement
-- Mechanical clearances
+### PCB 3D Render Images  
+[View 3D render images](pcb/images/pcb_3d/)
+
+Directory containing 3D render images used to visualize:
+- Board form factor  
+- Header placement  
+- Mechanical clearances  
+
+Includes multiple viewing angles of the PCB model.
 
 ---
 
-### `pcb/design_files/gerbers.zip`
-Manufacturing files (Gerbers) generated for PCB fabrication.
+### Gerber Manufacturing Files  
+[Download Gerbers](pcb/design_files/gerbers.zip)
+
+Manufacturing files generated for PCB fabrication.
 
 ---
 
