@@ -46,6 +46,8 @@ Demonstration videos show live gimbal articulation and thrust response under ben
 Project photos showing the gimbal assembly, internal electronics, and test setup
 are available in the [`images`](images) directory.
 
+Detailed hardware photos, including PCB assembly and wiring, are also available in the [`hardware`](hardware) directory.
+
 ---
 
 ## Demonstration Videos
