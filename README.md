@@ -44,13 +44,13 @@ Demonstration videos show live gimbal articulation and thrust response under ben
 
 ## System Overview (Images)
 Project photos showing the gimbal assembly, internal electronics, and test setup
-are available in the [`/images`](images) directory.
+are available in the [`images`](images) directory.
 
 ---
 
 ## Demonstration Videos
 Demonstration and walkthrough videos are documented in the
-[`/videos`](videos) folder, including:
+[`videos`](videos) folder, including:
 - Real-time gimbal and thrust control demonstration
 - Integrated rocket system overview
 - Detailed gimbal and electronics walkthrough
