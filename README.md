@@ -1,10 +1,11 @@
 # Thrust-Vectoring Rocket Test Rig
 
 ## Overview
-This project is a bench-tested thrust-vectoring rocket control system designed
-to explore mechanical gimbal design, embedded control, and power electronics
-integration. A 2-axis gimbal driven by high-torque servos redirects thrust from a
-brushless motor, controlled by an Arduino-based system with Bluetooth input.
+This project is a bench-tested thrust-vectoring rocket control system built to explore mechanical gimbal design, embedded control, and power electronics integration.
+
+At its core is a 2-axis gimbal (yaw and pitch) driven by high-torque servos that redirects thrust from a brushless motor. The system is controlled by an Arduino Nano and operated wirelessly through a custom Bluetooth interface.
+
+This was developed as a personal engineering project focused on hands-on system integration and rapid prototyping.
 
 This project was developed as a personal engineering project and is intended for
 **ground testing only**.
@@ -12,15 +13,16 @@ This project was developed as a personal engineering project and is intended for
 ---
 
 ## Key Features
-- Demonstration videos included showing live gimbal and thrust response
 - 2-axis thrust-vectoring gimbal (yaw + pitch)
 - Custom-designed PCB for control and power distribution
-- Arduino Nano–based firmware
-- Bluetooth control via HC-05 module
+- Arduino Nano firmware for real-time control
+- Bluetooth control via HC-05
 - Brushless motor + ESC thrust control
-- 3D-printed structural components
-- Modular design for future sensor-based stabilization (IMU)
-- Custom Android control app (Kodular) with joystick, slider, and buttons
+- 3D-printed structural and mounting components
+- Modular architecture designed for future IMU-based stabilization
+- Custom Android control app built in Kodular
+
+Demonstration videos show live gimbal articulation and thrust response under bench testing conditions.
 
 ---
 
@@ -28,11 +30,12 @@ This project was developed as a personal engineering project and is intended for
 
 ### Power
 - 3S LiPo battery
-- Buck converter stepping down to 5V for logic and servos
-- ESC supplying power to the brushless motor
+- Buck converter stepping down to regulated 5V for logic and servos
+- ESC powering the brushless motor
+- Dedicated power routing through a custom PCB
 
 ### Control
-- Arduino Nano
+- Arduino Nano as primary controller
 - PWM control of servos and ESC
 - Bluetooth serial input for joystick commands
 - Android control app with joystick, throttle slider, and buttons
