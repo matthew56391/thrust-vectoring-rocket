@@ -35,7 +35,7 @@ This schematic represents the circuit implemented on the PCB.
 
 ---
 
-### `../wiring/system_wiring_diagram.png`
+### `wiring/system_wiring_diagram.png`
 System-level wiring diagram showing how all components are connected in the full test setup, including:
 - LiPo battery
 - Buck converter
