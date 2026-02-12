@@ -23,7 +23,7 @@ Power is supplied externally via a regulated 5V source.
 
 ## Files in This Folder
 
-### `schematic.pdf`
+### `pcb/schematic/pcb_schematic.pdf`
 Electrical schematic of the PCB showing:
 - Signal routing
 - Voltage divider for HC-05 RX (1kΩ / 2kΩ)
@@ -35,7 +35,7 @@ This schematic represents the circuit implemented on the PCB.
 
 ---
 
-### `system_wiring_diagram.png`
+### `../wiring/system_wiring_diagram.png`
 System-level wiring diagram showing how all components are connected in the full test setup, including:
 - LiPo battery
 - Buck converter
@@ -48,7 +48,7 @@ This diagram is intended for real-world assembly and troubleshooting.
 
 ---
 
-### `pcb_2d.png`
+### `pcb/images/pcb_2d/`
 2D PCB layout view showing:
 - Component placement
 - Copper routing
@@ -57,7 +57,7 @@ This diagram is intended for real-world assembly and troubleshooting.
 
 ---
 
-### `pcb_3d.png`
+### `pcb/images/pcb_3d/`
 3D render of the PCB used to visualize:
 - Board form factor
 - Header placement
@@ -65,7 +65,7 @@ This diagram is intended for real-world assembly and troubleshooting.
 
 ---
 
-### `gerbers.zip`
+### `pcb/design_files/gerbers.zip`
 Manufacturing files (Gerbers) generated for PCB fabrication.
 
 ---
